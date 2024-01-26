@@ -14,7 +14,7 @@ body{
 
 /* estilos Generales Header */
 
-header{
+.contenedor{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,51 +24,47 @@ header{
     background-color: rgb(240 240 240);
 }
 
-header .Logo h2{
+.contenedor_logo h2{
     color: #0047cc;
     font-size: 1.8rem;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
-header ul{
+.contenedor_menu ul{
     display: flex;
     gap: 10px;
     list-style: none;
     margin-top: 5px;
 }
 
-header .menu ul li a{
+.contenedor_menu ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
-header .menu ul li a:hover{
+.contenedor_menu ul li a:hover{
     color: #003e85;
     border-bottom: 2px solid #0047cc;
 }
 
-/* INDEX */
-
-/* estilos del banner */
+/* Estilos del banner */
 
 .banner{
-    height: 100vh;
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr) 100px;
     grid-template-areas: 'contenido'
                         'video'
                         'sucursales'
-                        'grupo'
                         'footer';
 }
 
-.banner .contenido{
+.banner_contenido{
     grid-area: contenido;
     height: 70vh;
     width: 100%;
@@ -86,19 +82,19 @@ header .menu ul li a:hover{
     align-items: center;
 }
 
-.banner .contenido h1{
+.banner_contenido h1{
     font-size: 1.8rem;
     color: #0047cc;
 }
 
-.banner .contenido p{
+.banner_contenido p{
     margin-top: 5px;
     color: whitesmoke;
     text-align: center;
     width: 90%;
 }
 
-.banner .contenido .boton{
+.contenido_boton{
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #0047cc;
@@ -106,12 +102,12 @@ header .menu ul li a:hover{
     cursor: pointer;
 }
 
-.banner .contenido .boton:hover{
+.contenido_boton:hover{
     background-color: #0047cc;
 }
 
 
-.banner .contenido .boton a{
+.contenido_boton a{
     width: 100%;
     display: block;
     text-decoration: none;
@@ -120,64 +116,65 @@ header .menu ul li a:hover{
 
 /* CARACTERISTICAS Y VIDEO */
 
-.banner .video{
+.banner_video{
     background-color: #ccc;
     grid-area: video;
-    height: 50vh;
     display: flex;
+    gap: 50px;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
 
-.banner .video .Caracter{
+.video_caracter{
     margin: 20px;
 }
 
-.banner .video .Caracter h2{
+.video_caracter h2{
     color: #0047cc;
+    margin-bottom: 10px;
 }
 
-.banner .video .Caracter ul li{
+.video_caracter ul li{
     list-style: none;
     padding: 5px;
 }
 
-.banner .video .container video{
+.video_container video{
     max-width: 340px;
     height: auto;
 }
 
 /* Sucursales */
 
-.banner .sucursales{
+.banner_sucursales{
     grid-area: sucursales;
-    height: 70vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: rgb( 30 30 30);
+    gap: 20px;
 }
 
-.banner .sucursales .area{
+.sucursales_area{
     margin: 10px;
 }
 
-.banner .sucursales .area h2{
+.sucursales_area h2{
     color: #0047cc;
     font-size: 1.7rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.banner .sucursales .area ul{
+.sucursales_area ul{
     list-style: none;
     text-align: center;
 }
 
-.banner .sucursales .area ul li{
+.sucursales_area ul li{
     margin: 5px;
     border: 2px solid #0047cc;
     padding: 10px;
@@ -185,11 +182,11 @@ header .menu ul li a:hover{
     cursor: pointer;
 }
 
-.banner .sucursales .area ul li:hover{
+.sucursales_area ul li:hover{
     background-color: #0047cc;
 }
 
-.banner .sucursales .area ul li a{
+.sucursales_area ul li a{
     text-decoration: none;
     color: whitesmoke;
     display: block;
@@ -197,7 +194,7 @@ header .menu ul li a:hover{
     cursor: pointer;
 }
 
-.banner .sucursales .img-container img{
+.sucursales_img img{
     width: 100%;
     height: auto;
 }
@@ -469,7 +466,7 @@ header .menu ul li a:hover{
 
 /* FOOTER */
 
-.footer{
+.banner_footer{
     background-color: rgb(240 240 240);
     grid-area: footer;
     display: flex;
@@ -481,11 +478,11 @@ header .menu ul li a:hover{
     border-top: 1px solid black;
 }
 
-.footer .texto h6{
+.footer_texto h6{
     font-size: 1.3rem;
 }
 
-.footer .iconos ul{
+.footer_iconos ul{
     list-style: none;
     display: flex;
     gap: 50px;
@@ -494,39 +491,38 @@ header .menu ul li a:hover{
     color: black;
 }
 
-.footer .iconos ul li a{
+.footer_iconos ul li a{
     color: black;
 }
 
-.footer .iconos ul li a:hover{
+.footer_iconos ul li a:hover{
     color: #0047cc;
 }
 
 @media (min-width: 768px){
 
-    header .Logo h2{
-        width: 100%;
+    .contenedor_Logo h2{
         margin-bottom: 10px;
     }
 
     /* BANNER */
 
-    .banner .contenido{
+    .banner_contenido{
         padding: 30px;
         align-items: flex-start;
     }
 
-    .banner .contenido h1{
+    .banner_contenido h1{
         font-size: 2rem;
     }
 
-    .banner .contenido p{
+    .banner_contenido p{
         width: 70%;
         font-size: 1.2rem;
         text-align: start;
     }
 
-    .banner .contenido .boton{
+    .contenido_boton{
         font-size: 1.4rem;
         margin-top: 15px;
         border-radius: 0;
@@ -534,49 +530,51 @@ header .menu ul li a:hover{
     
     /* CARACTERISTICAS Y VIDEO */
 
-    .banner .video{
+    .banner_video{
         flex-flow: row wrap;
         justify-content: space-evenly;
     }
 
-    .banner .video .container video{
-        max-width: 370px;
+    .video_caracter h2,
+    .video_caracter ul{
+        font-size: 1.5em;
+    }
+
+    .video_caracter h2{
+        text-align: center;
+    }
+
+    .video_container video{
+        max-width: 390px;
     }
 
     /* SUCURSALES */
 
-    .banner .sucursales{
+    .banner_sucursales{
         flex-flow: row;
         justify-content: space-evenly;
     }
 
-    .banner .sucursales .area ul li{
+    .sucursales_area ul li{
         border-radius: 0;
         margin: 10px;
     }
 
-    .banner .sucursales .area ul li a{
+    .sucursales_area ul li a{
         display: block;
     }
 
-    .banner .sucursales .img-container{
-        width: 40%;
+    .sucursales_img{
+        width: 50%;
     }
 
-    .banner .sucursales .img-container img{
+    .img-container img{
         width: 100%;
     }
 
-    /* grupo */
-
-    .banner .grupo div p{
-        width: 40%;
-    }
-
-
     /* PAGINA DE BOWLS */
 
-        .contain{
+    .contain{
         grid-template-columns: repeat(2, minmax(200px, 700px));
         justify-items: center;
     }
