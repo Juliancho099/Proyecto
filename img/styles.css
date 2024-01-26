@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: black;
+    background-color: #F2DDA4;
+    z-index: 2;
+}
+
+#a-todos-lados-logo{
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.header nav{
+    display: inline;
+    position: relative;
+    left: 15%;
+    bottom: 50%;
+}
+
+.header ul{
+    display: inline;
+}
+
+.header li{
+    display: inline;
+    margin-left: 100px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    background-color: #413C58;
+}
+
+.header li a {
+    color:#FF8D03;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main{
+    padding-top: 10px;
+    /* background-color: #E7EFC5; */
+    /* height: 100vh; */
+    text-align: center;
+}
+
+main p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+/* INDEX STYLES */
+main.index{
+    background-image: url(../images/background-inicio-16-9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main.index .title-div p{
+    font-style: italic;
+    font-size: 2rem;
+}
+
+main.index .title-div h1{
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+main.index section{
+    width: 75vw;
+    margin-left: 12.5vw;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+main.index section div.intro{
+    font-size: 2rem;
+    color: white;
+}
+
+main.index section ul {
+    width: 40vw; 
+    margin-left:20vw;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: black;
+}
+/* DSTINOS STYLES */
+
+main.destinos div.title-div{
+    margin: 10px 0px 20px 0px;
+}
+
+main.destinos article.detail-div{
+    position: relative;
+    width: 50vw;
+    height: 340px;
+    margin-left: 25vw;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    /* background-color: #A3C4BC; */
+    background-color: #a3c4bc4d;
+}
+
+main.destinos img.city-image{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left:20px;
+    bottom:20px;
+    border-radius: 20px;    
+}
+
+
+main.destinos h2.city-name{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    z-index: 1;
+    color:white;
+}
+
+main.destinos div.city-description-long{
+    position: absolute;
+    left: 340px;
+    top:20px;
+    margin:0px 20px 0px 20px;
+    text-align:left;
+}
+
+main.destinos div.city-description-long ul{
+    position: absolute;
+    left:25%;
+    margin-top: 10px;
+}
+
+main.destinos div.carousel{
+    display: inline-block;
+    position: relative;
+    width: 888px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+main.destinos div.carousel i{
+    position: absolute;
+    top: 50%;
+}
+
+main.destinos div.carousel i.fa-chevron-left{
+    left:0px;
+}
+
+main.destinos div.carousel i.fa-chevron-right{
+    right:0px;
+}
+
+main.destinos div.destination{
+    background-color: #A3C4BC;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+main.destinos h2{
+    position: absolute;
+    left:25px;
+    top:25px;
+    color:rgba(0, 0, 0, 0.629)
+}
+
+main.destinos div.destination img{
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.footer{
+    background-color: #A3C4BC;    
+}
+
+.footer div.contact{
+    display: inline-block;
+    margin: 10px;
+
+}
+
+.footer div.info{
+    margin: 20px 0px 20px 0px;
+}
+
+.footer div.info span{
+    margin: 0px 30px 0px 0px;
+}
+
+.footer div.privacy-and-social{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+
+.footer div.privacy-and-social div{
+    position: relative;
+    left: 90px;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+}
+

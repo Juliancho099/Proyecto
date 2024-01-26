@@ -1,0 +1,742 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    
+}
+
+/* Estilos Mobile */
+
+/* estilos Generales Header */
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240 240 240);
+}
+
+header .Logo h2{
+    color: #0047cc;
+    font-size: 1.8rem;
+    width: 90%;
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-top: 5px;
+}
+
+header .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+header .menu ul li a:hover{
+    color: #003e85;
+    border-bottom: 2px solid #0047cc;
+}
+
+/* INDEX */
+
+/* estilos del banner */
+
+.banner{
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 'contenido'
+                        'video'
+                        'sucursales'
+                        'grupo'
+                        'footer';
+}
+
+.banner .contenido{
+    grid-area: contenido;
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgb(40,40,40,0.4),
+        rgb(40,40,40,0.4)
+    )
+    ,url('../img/hjb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .contenido h1{
+    font-size: 1.8rem;
+    color: #0047cc;
+}
+
+.banner .contenido p{
+    margin-top: 5px;
+    color: whitesmoke;
+    text-align: center;
+    width: 90%;
+}
+
+.banner .contenido .boton{
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #0047cc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banner .contenido .boton:hover{
+    background-color: #0047cc;
+}
+
+
+.banner .contenido .boton a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* CARACTERISTICAS Y VIDEO */
+
+.banner .video{
+    background-color: #ccc;
+    grid-area: video;
+    height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .video .Caracter{
+    margin: 20px;
+}
+
+.banner .video .Caracter h2{
+    color: #0047cc;
+}
+
+.banner .video .Caracter ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.banner .video .container video{
+    max-width: 340px;
+    height: auto;
+}
+
+/* Sucursales */
+
+.banner .sucursales{
+    grid-area: sucursales;
+    height: 70vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb( 30 30 30);
+}
+
+.banner .sucursales .area{
+    margin: 10px;
+}
+
+.banner .sucursales .area h2{
+    color: #0047cc;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner .sucursales .area ul{
+    list-style: none;
+    text-align: center;
+}
+
+.banner .sucursales .area ul li{
+    margin: 5px;
+    border: 2px solid #0047cc;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banner .sucursales .area ul li:hover{
+    background-color: #0047cc;
+}
+
+.banner .sucursales .area ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.banner .sucursales .img-container img{
+    width: 100%;
+    height: auto;
+}
+
+/* PAGINA DE BOWLS */
+
+/* Estilos contenedor */
+
+.contain{
+    display: grid;
+    grid-template-rows: 10px, repeat(3, minmax(200px, 1fr));
+    gap: 5px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.contain .titulo{
+    width: 100%;
+    border: 2px solid #5d5f5f;
+    color: rgb(0, 83, 230);
+    text-align: center;
+}
+
+.contain .bowls{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.contain .bowls figure{
+    overflow: hidden;
+}
+
+.contain .bowls img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.contain .bowls:hover img{
+    transform: scale(1.1);
+}
+
+.contain .bowls .info{
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1;
+    align-items: center;
+}
+
+.contain .bowls .info h3{
+    color: #0047cc;
+    font-weight: lighter;
+}
+
+.contain .bowls .info p{
+    text-align: center;
+    max-width: 60%;
+}
+
+/* PAGINA DE CAFE */
+
+.menu-coffe{
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    width: 100%;
+    height: 85vh;
+    padding: 80px;
+    text-align: center;
+}
+
+.fondo{
+    margin: auto;
+    max-width: 680px;
+    background-color: burlywood;
+    height: 70vh;
+    margin-bottom: 5px;
+}
+
+.one{
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.one .fondo h1, h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.items{
+    align-items: right;
+    font-weight: bold;
+}
+
+.items p{
+    display: inline-block;
+    padding: 2px;
+}
+
+.nombre{
+    text-align: left;
+    width: 50%;
+}
+
+.precio{
+    text-align: right;
+    width: 49%;
+}
+
+.imgcoffe{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcoffe .tasa{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+/* JUICES */
+
+.back-juice{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfjtHf3SbOkOQpytsUZLBfgERyWW5j3UV-Q&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center CENTER;
+    width: 100%;
+    height: 84vh;
+    padding: 100px;
+    text-align: center;
+    background-color: rgb(201, 201, 201);
+}
+
+.back{
+    color: rgb(1, 60, 169);
+    background-color: rgba(186, 183, 183, 0.911);
+    margin: auto;
+    max-width: 700px;
+    height: 60vh;
+    margin-bottom: 5px;
+    padding: 30px;
+}
+
+.one{
+    color: black;
+}
+
+.back h2{
+    color: rgb(1, 60, 169);
+}
+
+
+/* FORMULARIO */
+
+.form-fondo{
+    background-color: #ccc;
+    padding:  0 1.5em;
+    margin: 10px auto;
+}
+
+.container-form{
+    max-width: 1170px;
+    margin: 10px auto;
+    padding: 1.5em;
+    min-height: 80vh;
+}
+
+.container-form .logo{
+    text-align: center;
+    font-size: 2em;
+}
+
+.container-form .logo span{
+    color: #0047cc;
+    border-bottom: 10px solid #ccc;
+}
+
+.contact-wrapper{
+    margin: 20px;
+    box-shadow: 0 0 20px 0 #002fff4d;
+}
+
+.contact-wrapper h3{
+    font-weight: lighter;
+    text-align: center;
+}
+
+.contact-wrapper> *{
+    padding: 1em;
+}
+
+.contact-form{
+    background: #bbb;
+}
+
+.contact-form form p{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #04f;
+    outline: none;
+}
+
+.contact-form form button{
+    background: #2e60aa;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    margin: 5px;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background-color: #04f;
+    color: whitesmoke;
+    transition: all .2s;
+    outline: 0;
+}
+
+.contact-info{
+    background: #aaa;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p,
+.contact-info li{
+    text-align: center;
+    margin:  0 0 .5rem 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-info ul li{
+    padding: .3em;
+}
+
+.contact-info ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(240 240 240);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid black;
+}
+
+.footer .texto h6{
+    font-size: 1.3rem;
+}
+
+.footer .iconos ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 2rem;
+    margin-top: 3px;
+    color: black;
+}
+
+.footer .iconos ul li a{
+    color: black;
+}
+
+.footer .iconos ul li a:hover{
+    color: #0047cc;
+}
+
+@media (min-width: 768px){
+
+    header .Logo h2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* BANNER */
+
+    .banner .contenido{
+        padding: 30px;
+        align-items: flex-start;
+    }
+
+    .banner .contenido h1{
+        font-size: 2rem;
+    }
+
+    .banner .contenido p{
+        width: 70%;
+        font-size: 1.2rem;
+        text-align: start;
+    }
+
+    .banner .contenido .boton{
+        font-size: 1.4rem;
+        margin-top: 15px;
+        border-radius: 0;
+    }
+    
+    /* CARACTERISTICAS Y VIDEO */
+
+    .banner .video{
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .banner .video .container video{
+        max-width: 370px;
+    }
+
+    /* SUCURSALES */
+
+    .banner .sucursales{
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .banner .sucursales .area ul li{
+        border-radius: 0;
+        margin: 10px;
+    }
+
+    .banner .sucursales .area ul li a{
+        display: block;
+    }
+
+    .banner .sucursales .img-container{
+        width: 40%;
+    }
+
+    .banner .sucursales .img-container img{
+        width: 100%;
+    }
+
+    /* grupo */
+
+    .banner .grupo div p{
+        width: 40%;
+    }
+
+
+    /* PAGINA DE BOWLS */
+
+        .contain{
+        grid-template-columns: repeat(2, minmax(200px, 700px));
+        justify-items: center;
+    }
+
+    .contain .titulo{
+        grid-column: span 2;
+    }
+
+    .contain .bowls:last-of-type{
+        grid-column: span 2;
+        width: 50%;
+    }
+
+    /* Formuklario */
+
+    .form-container{
+        padding: 0 3em;
+    }
+
+    .contact-wrapper{
+        display: grid;
+        margin: 50px 100px;
+        grid-template-columns: 2fr 250px;
+    }
+
+    .contact-form h3{
+        margin-top: 20px;
+    }
+
+    .contact-form form{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        margin: 10px;
+        padding: 30px;
+    }
+
+    .contact-form form .block{
+        grid-column: span 2;
+    }
+
+     /* footer */
+
+     .footer{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+@media(min-width: 1024px){
+
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* contenido principal */
+
+    .banner{
+    }
+
+    .banner .contenido h1{
+        font-size: 2.2rem;
+    }
+
+    .banner .contenido p{
+        font-size: 1.3rem;
+        width: 50%;
+    }
+
+    /* caracter y video */
+
+    .banner .video{
+        justify-content: space-around;
+    }
+
+    .banner .video .Caracter h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .banner .video .Caracter ul{
+        font-size: 1.3rem;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .banner .video .Caracter ul li{
+        margin: 5px;
+    }
+
+    .banner .video .container{
+        width: 35%;
+    }
+
+    .banner .video .container video{
+        max-width: 430px;
+    }
+
+    /* sucursales */
+
+    .banner .sucursales{
+        justify-content: space-around;
+    }
+
+    .banner .sucursales .img-container{
+        width: 35%;
+    }
+
+    .banner .sucursales .img-container img{
+        width: 450px;
+        height: auto;
+    }
+
+    .banner .grupo{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .banner .grupo div p{
+        width: 100%;
+    }
+
+    /* pagina de bowls */
+
+    .contain{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50px 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contain .titulo{
+        grid-column: span 3;
+    }
+
+    .contain .bowls{
+        align-self: baseline;
+    }
+
+    .contain .bowls:last-of-type{
+        grid-column: span 1;
+        width: 100%;
+    }
+
+    .contain .bowls img{
+        height: 550px;
+    }
+
+    /* formulario */
+
+    .form-container{
+        padding: 0 10em;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+}
+
+

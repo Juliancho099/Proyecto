@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('./img/HBJ.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.contenido {
+    text-align: center;
+    padding: 50px;
+}
+
+@media  (min-width: 500px) {
+    body {
+        background-image: url('./img/bali.jpeg'); /* Nueva imagen de fondo */
+        
+        background-repeat: no-repeat;
+        background-size: 168px 299px;
+        background-position: 1150px;
+        display: inline;
+        padding: 200px;
+        margin: 50%;
+        /* Cambio de posición de la imagen a la derecha */
+    }
+
+    .contenido {
+        text-align: left;
+        display: inline;
+        color: black; /* Alineación del texto a la izquierda */
+    }
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+li {
+    font-size: 1.2em;
+}
+
+a {
+    padding: 5px 11px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(3, 62, 151);
+}
+
+button {
+    font-size: 1.5;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(1, 70, 174)
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(3, 86, 211);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 -13px;
+}
+
+#Sobre-nosotros {
+    flex-direction: column;
+    height: 85vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/HBJ.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.content {
+    align-items: center;
+    text-align: center;
+    padding: 200px 15px;
+    color: white;
+}
+
+.content h1 {
+    padding: 10px;
+    text-align: center;
+    color: rgb(3, 86, 211);
+}
+
+.content p {
+    text-align: center;
+}
+
+.content button {
+    transform: translateY(26%);
+}
+
+#video {
+    padding: 20px;
+    height: 300px;
+}
+
+.video-container video {
+    display: none;
+}
+
+#video h2,
+li {
+    text-align: center;
+    padding: 10px;
+}
+
+#video ul {
+    list-style: none;
+}
+
+#sucursales {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 20px;
+}
+
+#sucursales h2 {
+    text-align: center;
+    color: rgb(3, 86, 211);
+}
+
+#sucursales ul {
+    list-style: none;
+}
+
+#sucursales a {
+    color: rgb(171, 171, 171);
+}
+
+#sucursales a:hover {
+    color: rgb(3, 62, 151);
+}
+
+/* Aqui va el css de la page2 */
+
+#principal {
+    padding: 2px;
+    text-align: center;
+    align-items: center;
+}
+
+#principal .contenido h2 {
+    padding: 15px;
+    position: relative;
+    margin-top: -15px;
+    color: rgb(0, 73, 182);
+}
+
+#principal .titulo {
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: rgb(3, 86, 211);
+    margin: 10px auto;
+    padding: 10vh auto;
+    font-size: 0.5em;
+}
+
+#principal .contenido {
+    background-image: url("../img/bali.jpeg");
+    background-repeat: no-repeat;
+    max-width: 700px;
+    background-size: cover;
+    background-position: center;
+    padding: 15vh 15%;
+    color: rgb(255, 255, 255);
+}
+
+#acai .container{
+    background-image: url(../img/acaijpeg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15vh 15%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#acai .container h2{
+    color: rgb(3, 86, 211);
+    padding: 10px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: rgb(3, 86, 211);
+}
+
+
+@media (min-width: 800px) {
+
+    header nav ul {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 150px;
+        color: white;
+        text-align: right;
+        width: 25%;
+        padding: 50px;
+    }
+
+    .content button {
+        position: relative;
+        right: 25px;
+    }
+
+    #video {
+        text-align: initial;
+    }
+
+    .video-container video {
+        width: 35%;
+        max-width: 720px;
+        height: auto;
+        display: block;
+        position: absolute;
+        transform: translatex(160%);
+    }
+
+    #video .Caracter {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: -700px;
+    }
+
+    #sucursales {
+        background-image: url("../img/Juice.jpg");
+        background-repeat: no-repeat;
+        background-size: 250px 250px;
+        background-position: calc(100vw - 500px) 25px;
+    }
+
+    #sucursales .sucursales {
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: -700px;
+    }
+
+    /* Estilos para el footer y los iconos */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+    }
+
+    .social-icons li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+    }
+
+    .social-icons a:hover {
+        color: rgb(3, 86, 211);
+    }
+
+}
+
+/* Aqui va el css de la page2 */
+@media (min-width: 720px) {
+
+    #principal {
+        background-color: rgb(240, 240, 240);
+        width: auto;
+        max-width: 1920px;
+    }
+
+    #principal .titulo{
+        margin-top: 0;
+    }
+
+    #principal .contenido {
+        background-image: url(../img/bali.jpeg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto;
+        background-position: calc(110vw - 600px) 150px 150px;
+        color: rgb(0, 0, 0);
+    }
+
+    #principal .contenido .text {
+        width: 60%;
+        margin: 0 20px;
+        max-width: 200%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #acai{
+        background-color: rgb(240, 240, 240);
+    }
+
+    #acai .container{
+        display: flex;
+        background-image: none;
+    }
+
+    #acai .right-text{
+        width: 90%;
+        max-width: 600px;
+        text-align: left;
+        padding-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(35%);
+    }
+
+    #acai h2{
+        margin-top: 0px;
+    }
+
+    #acai .container::before{
+        content: '';
+        flex: 1;
+        background-image: url("../img/acaijpeg.jpeg"); /* Nueva imagen para escritorio */
+        background-size: cover;
+        background-position: center;
+        padding: 20vh 20vh;
+        margin-right: 30px;
+    }
+
+}
+
+
+@media (min-width: 1100px){
+    .content button {
+        position: relative;
+        right: 80px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    
+    #principal .contenido{
+        background-position: calc(110vw - 500px)70px;
+    }
+
+}
