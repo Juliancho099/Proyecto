@@ -507,7 +507,7 @@ body{
     /* BANNER */
 
     .banner_contenido{
-        padding: 30px;
+        padding: 2em;
         align-items: flex-start;
     }
 
