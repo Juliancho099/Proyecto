@@ -1,20 +1,20 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'roboto', sans-serif;
-    
+
 }
 
 /* Estilos Mobile */
 
 /* estilos Generales Header */
 
-.contenedor{
+.contenedor {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,21 +24,21 @@ body{
     background-color: rgb(240 240 240);
 }
 
-.contenedor_logo h2{
+.contenedor_logo h2 {
     color: #0047cc;
     font-size: 1.8rem;
     width: 100%;
     text-align: center;
 }
 
-.contenedor_menu ul{
+.contenedor_menu ul {
     display: flex;
     gap: 10px;
     list-style: none;
     margin-top: 5px;
 }
 
-.contenedor_menu ul li a{
+.contenedor_menu ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
@@ -46,33 +46,30 @@ body{
     transition: all 1s;
 }
 
-.contenedor_menu ul li a:hover{
+.contenedor_menu ul li a:hover {
     color: #003e85;
     border-bottom: 2px solid #0047cc;
 }
 
 /* Estilos del banner */
 
-.banner{
+.banner {
     max-width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr) 100px;
     grid-template-areas: 'contenido'
-                        'video'
-                        'sucursales'
-                        'footer';
+        'video'
+        'sucursales'
+        'footer';
 }
 
-.banner_contenido{
+.banner_contenido {
     grid-area: contenido;
     width: 100%;
-    background-image: linear-gradient(
-        rgb(40,40,40,0.4),
-        rgb(40,40,40,0.4)
-    )
-    ,url('../img/hjb.png');
+    background-image: linear-gradient(rgb(40, 40, 40, 0.4),
+            rgb(40, 40, 40, 0.4)), url('../img/hjb.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,19 +79,19 @@ body{
     align-items: center;
 }
 
-.banner_contenido h1{
+.banner_contenido h1 {
     font-size: 1.8rem;
     color: #0047cc;
 }
 
-.banner_contenido p{
+.banner_contenido p {
     margin-top: 5px;
     color: whitesmoke;
     text-align: center;
     width: 90%;
 }
 
-.contenido_boton{
+.contenido_boton {
     padding: 10px;
     margin-top: 5px;
     border: 2px solid #0047cc;
@@ -102,12 +99,12 @@ body{
     cursor: pointer;
 }
 
-.contenido_boton:hover{
+.contenido_boton:hover {
     background-color: #0047cc;
 }
 
 
-.contenido_boton a{
+.contenido_boton a {
     width: 100%;
     display: block;
     text-decoration: none;
@@ -116,7 +113,7 @@ body{
 
 /* CARACTERISTICAS Y VIDEO */
 
-.banner_video{
+.banner_video {
     background-color: #ccc;
     grid-area: video;
     display: flex;
@@ -126,55 +123,55 @@ body{
     justify-content: center;
 }
 
-.video_caracter{
+.video_caracter {
     margin: 20px;
 }
 
-.video_caracter h2{
+.video_caracter h2 {
     color: #0047cc;
     margin-bottom: 10px;
 }
 
-.video_caracter ul li{
+.video_caracter ul li {
     list-style: none;
     padding: 5px;
 }
 
-.video_container video{
+.video_container video {
     max-width: 340px;
     height: auto;
 }
 
 /* Sucursales */
 
-.banner_sucursales{
+.banner_sucursales {
     grid-area: sucursales;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgb( 30 30 30);
+    background-color: rgb(30 30 30);
     gap: 20px;
 }
 
-.sucursales_area{
+.sucursales_area {
     margin: 10px;
 }
 
-.sucursales_area h2{
+.sucursales_area h2 {
     color: #0047cc;
     font-size: 1.7rem;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.sucursales_area ul{
+.sucursales_area ul {
     list-style: none;
     text-align: center;
 }
 
-.sucursales_area ul li{
+.sucursales_area ul li {
     margin: 5px;
     border: 2px solid #0047cc;
     padding: 10px;
@@ -182,11 +179,11 @@ body{
     cursor: pointer;
 }
 
-.sucursales_area ul li:hover{
+.sucursales_area ul li:hover {
     background-color: #0047cc;
 }
 
-.sucursales_area ul li a{
+.sucursales_area ul li a {
     text-decoration: none;
     color: whitesmoke;
     display: block;
@@ -194,16 +191,16 @@ body{
     cursor: pointer;
 }
 
-.sucursales_img img{
+.sucursales_img img {
     width: 300px;
-    
+
 }
 
 /* PAGINA DE BOWLS */
 
 /* Estilos contenedor */
 
-.contain{
+.contain {
     display: grid;
     grid-template-rows: 10px, repeat(3, minmax(200px, 1fr));
     gap: 5px;
@@ -211,25 +208,25 @@ body{
     padding: 30px;
 }
 
-.contain_titulo{
+.contain_titulo {
     width: 100%;
     border: 2px solid #5d5f5f;
     color: rgb(0, 83, 230);
     text-align: center;
 }
 
-.contain_bowls{
+.contain_bowls {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: fit-content;
 }
 
-.contain_bowls figure{
+.contain_bowls figure {
     overflow: hidden;
 }
 
-.contain_bowls img{
+.contain_bowls img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -237,11 +234,11 @@ body{
     transition: all .5s;
 }
 
-.contain_bowls:hover img{
+.contain_bowls:hover img {
     transform: scale(1.1);
 }
 
- .bowls_info{
+.bowls_info {
     border: 1px solid black;
     border-radius: 0 0 10px 10px;
     padding: 15px 30px;
@@ -252,19 +249,19 @@ body{
     align-items: center;
 }
 
-.bowls_info h3{
+.bowls_info h3 {
     color: #0047cc;
     font-weight: lighter;
 }
 
-.bowls_info p{
+.bowls_info p {
     text-align: center;
     max-width: 60%;
 }
 
 /* PAGINA DE CAFE */
 
-.menu-coffe{
+.menu-coffe {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     width: 100%;
     height: 85vh;
@@ -272,7 +269,7 @@ body{
     text-align: center;
 }
 
-.fondo{
+.fondo {
     margin: auto;
     max-width: 680px;
     background-color: burlywood;
@@ -280,38 +277,39 @@ body{
     margin-bottom: 5px;
 }
 
-.one{
+.one {
     padding: 10px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.one .fondo h1, h3{
+.one .fondo h1,
+h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
 }
 
-.items{
+.items {
     align-items: right;
     font-weight: bold;
 }
 
-.items p{
+.items p {
     display: inline-block;
     padding: 2px;
 }
 
-.nombre{
+.nombre {
     text-align: left;
     width: 50%;
 }
 
-.precio{
+.precio {
     text-align: right;
     width: 49%;
 }
 
-.imgcoffe{
+.imgcoffe {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
@@ -320,7 +318,7 @@ body{
     align-items: center;
 }
 
-.imgcoffe .tasa{
+.imgcoffe .tasa {
     width: 100px;
     height: 100px;
     margin: 5px;
@@ -330,7 +328,7 @@ body{
 
 /* JUICES */
 
-.back-juice{
+.back-juice {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEfjtHf3SbOkOQpytsUZLBfgERyWW5j3UV-Q&usqp=CAU);
     background-repeat: no-repeat;
     background-size: contain;
@@ -342,7 +340,7 @@ body{
     background-color: rgb(201, 201, 201);
 }
 
-.back{
+.back {
     color: rgb(1, 60, 169);
     background-color: rgba(186, 183, 183, 0.911);
     margin: auto;
@@ -352,66 +350,66 @@ body{
     padding: 30px;
 }
 
-.one{
+.one {
     color: black;
 }
 
-.back h2{
+.back h2 {
     color: rgb(1, 60, 169);
 }
 
 
 /* FORMULARIO */
 
-.form-fondo{
+.form-fondo {
     background-color: #ccc;
-    padding:  0 1.5em;
+    padding: 0 1.5em;
     margin: 10px auto;
 }
 
-.container-form{
+.container-form {
     max-width: 1170px;
     margin: 10px auto;
     padding: 1.5em;
     min-height: 80vh;
 }
 
-.container-form .logo{
+.container-form .logo {
     text-align: center;
     font-size: 2em;
 }
 
-.container-form .logo span{
+.container-form .logo span {
     color: #0047cc;
     border-bottom: 10px solid #ccc;
 }
 
-.contact-wrapper{
+.contact-wrapper {
     margin: 20px;
     box-shadow: 0 0 20px 0 #002fff4d;
 }
 
-.contact-wrapper h3{
+.contact-wrapper h3 {
     font-weight: lighter;
     text-align: center;
 }
 
-.contact-wrapper> *{
+.contact-wrapper>* {
     padding: 1em;
 }
 
-.contact-form{
+.contact-form {
     background: #bbb;
 }
 
-.contact-form form p{
+.contact-form form p {
     margin: 0;
-    padding: 1em;
+    padding: 1em;atajo de tecladfo alt en visualñ studio code
 }
 
 .contact-form form button,
 .contact-form form input,
-.contact-form form textarea{
+.contact-form form textarea {
     width: 100%;
     padding: .7em;
     border: none;
@@ -420,7 +418,7 @@ body{
     outline: none;
 }
 
-.contact-form form button{
+.contact-form form button {
     background: #2e60aa;
     border: 0;
     text-transform: uppercase;
@@ -429,44 +427,44 @@ body{
 }
 
 .contact-form form button:hover,
-.contact-form form button:focus{
+.contact-form form button:focus {
     background-color: #04f;
     color: whitesmoke;
     transition: all .2s;
     outline: 0;
 }
 
-.contact-info{
+.contact-info {
     background: #aaa;
 }
 
 .contact-info h4,
 .contact-info ul,
 .contact-info p,
-.contact-info li{
+.contact-info li {
     text-align: center;
-    margin:  0 0 .5rem 0;
+    margin: 0 0 .5rem 0;
 }
 
-.contact-info ul{
+.contact-info ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.contact-info ul li{
+.contact-info ul li {
     padding: .3em;
 }
 
-.contact-info ul li a{
+.contact-info ul li a {
     text-decoration: none;
     color: black;
 }
 
 /* FOOTER */
 
-.banner_footer{
+.banner_footer {
     background-color: rgb(240 240 240);
     grid-area: footer;
     display: flex;
@@ -478,11 +476,11 @@ body{
     border-top: 1px solid black;
 }
 
-.footer_texto h6{
+.footer_texto h6 {
     font-size: 1.3rem;
 }
 
-.footer_iconos ul{
+.footer_iconos ul {
     list-style: none;
     display: flex;
     gap: 50px;
@@ -491,138 +489,138 @@ body{
     color: black;
 }
 
-.footer_iconos ul li a{
+.footer_iconos ul li a {
     color: black;
 }
 
-.footer_iconos ul li a:hover{
+.footer_iconos ul li a:hover {
     color: #0047cc;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-    .contenedor_Logo h2{
+    .contenedor_Logo h2 {
         margin-bottom: 10px;
     }
 
     /* BANNER */
 
-    .banner_contenido{
+    .banner_contenido {
         padding: 2em;
         align-items: flex-start;
     }
 
-    .banner_contenido h1{
+    .banner_contenido h1 {
         font-size: 2rem;
     }
 
-    .banner_contenido p{
+    .banner_contenido p {
         width: 70%;
         font-size: 1.2rem;
         text-align: start;
     }
 
-    .contenido_boton{
+    .contenido_boton {
         font-size: 1.4rem;
         margin-top: 15px;
         border-radius: 0;
     }
-    
+
     /* CARACTERISTICAS Y VIDEO */
 
-    .banner_video{
+    .banner_video {
         flex-flow: row wrap;
         justify-content: space-evenly;
     }
 
     .video_caracter h2,
-    .video_caracter ul{
+    .video_caracter ul {
         font-size: 1.5em;
     }
 
-    .video_caracter h2{
+    .video_caracter h2 {
         text-align: center;
     }
 
-    .video_container video{
+    .video_container video {
         max-width: 390px;
     }
 
     /* SUCURSALES */
 
-    .banner_sucursales{
+    .banner_sucursales {
         flex-flow: row;
         justify-content: space-around;
     }
 
-    .sucursales_area ul li{
+    .sucursales_area ul li {
         border-radius: 0;
         margin: 10px;
     }
 
-    .sucursales_area ul li a{
+    .sucursales_area ul li a {
         display: block;
     }
 
-    .sucursales_img img{
+    .sucursales_img img {
         width: 400px;
     }
 
     /* PAGINA DE BOWLS */
 
-    .contain{
+    .contain {
         grid-template-columns: repeat(2, minmax(200px, 700px));
         justify-items: center;
     }
 
-    .contain_titulo{
+    .contain_titulo {
         grid-column: span 2;
     }
 
-    .contain_bowls:last-of-type{
+    .contain_bowls:last-of-type {
         grid-column: span 2;
         width: 50%;
     }
 
     /* Formuklario */
 
-    .form-container{
+    .container-form {
         padding: 0 3em;
     }
 
-    .contact-wrapper{
+    .contact-wrapper {
         display: grid;
         margin: 50px 100px;
         grid-template-columns: 2fr 250px;
     }
 
-    .contact-form h3{
+    .contact-form h3 {
         margin-top: 20px;
     }
 
-    .contact-form form{
+    .contact-form form {
         display: grid;
         grid-template-columns: repeat(2, minmax(100px, 1fr));
         margin: 10px;
         padding: 30px;
     }
 
-    .contact-form form .block{
+    .contact-form form .block {
         grid-column: span 2;
     }
 
-     /* footer */
+    /* footer */
 
-     .banner_footer{
+    .banner_footer {
         flex-direction: row;
         justify-content: space-around;
     }
 
 }
 
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
 
-    header{
+    header {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -630,96 +628,88 @@ body{
 
     /* contenido principal */
 
-    .banner .contenido h1{
+    .banner .contenido h1 {
         font-size: 2.2rem;
     }
 
-    .banner .contenido p{
+    .banner .contenido p {
         font-size: 1.3rem;
         width: 50%;
     }
 
     /* caracter y video */
 
-    .banner_video{
+    .banner_video {
         justify-content: space-around;
     }
 
-    .video_Caracter h2{
+    .video_Caracter h2 {
         font-size: 2rem;
         text-align: center;
     }
 
-    .video_Caracter ul{
+    .video_Caracter ul {
         font-size: 1.3rem;
         margin-top: 10px;
         padding: 10px;
     }
 
-    .video_Caracter ul li{
+    .video_Caracter ul li {
         margin: 5px;
     }
 
-    .video_container{
+    .video_container {
         width: 35%;
     }
 
-    .video_container video{
+    .video_container video {
         max-width: 430px;
     }
 
     /* sucursales */
 
-    .banner_sucursales{
+    .banner_sucursales {
         justify-content: space-around;
     }
 
-    .sucursales_img{
+    .sucursales_img {
         width: 35%;
     }
 
-    .sucursales_img img{
+    .sucursales_img img {
         width: 450px;
     }
 
     /* pagina de bowls */
 
-    .contain{
+    .contain {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 50px 100%;
         width: 100%;
         justify-content: space-between;
     }
 
-    .contain_titulo{
+    .contain_titulo {
         grid-column: span 3;
     }
 
-    .contain_bowls{
+    .contain_bowls {
         align-self: baseline;
     }
 
-    .contain_bowls:last-of-type{
+    .contain_bowls:last-of-type {
         grid-column: span 1;
         width: 100%;
     }
 
-    .contain_bowls img{
+    .contain_bowls img {
         height: 550px;
-    }
-
-    /* Formulario */
-
-    .form-container{
-        padding: 0 10em;
     }
 
     /* Footer */
 
-    .banner_footer{
+    .banner_footer {
         padding: 20px;
     }
 
 }
-
-
