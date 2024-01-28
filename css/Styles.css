@@ -66,7 +66,6 @@ body{
 
 .banner_contenido{
     grid-area: contenido;
-    height: 70vh;
     width: 100%;
     background-image: linear-gradient(
         rgb(40,40,40,0.4),
@@ -195,8 +194,8 @@ body{
 }
 
 .sucursales_img img{
-    width: 100%;
-    height: auto;
+    width: 300px;
+    
 }
 
 /* PAGINA DE BOWLS */
@@ -211,25 +210,25 @@ body{
     padding: 30px;
 }
 
-.contain .titulo{
+.contain_titulo{
     width: 100%;
     border: 2px solid #5d5f5f;
     color: rgb(0, 83, 230);
     text-align: center;
 }
 
-.contain .bowls{
+.contain_bowls{
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: fit-content;
 }
 
-.contain .bowls figure{
+.contain_bowls figure{
     overflow: hidden;
 }
 
-.contain .bowls img{
+.contain_bowls img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -237,11 +236,11 @@ body{
     transition: all .5s;
 }
 
-.contain .bowls:hover img{
+.contain_bowls:hover img{
     transform: scale(1.1);
 }
 
-.contain .bowls .info{
+ .bowls_info{
     border: 1px solid black;
     border-radius: 0 0 10px 10px;
     padding: 15px 30px;
@@ -252,12 +251,12 @@ body{
     align-items: center;
 }
 
-.contain .bowls .info h3{
+.bowls_info h3{
     color: #0047cc;
     font-weight: lighter;
 }
 
-.contain .bowls .info p{
+.bowls_info p{
     text-align: center;
     max-width: 60%;
 }
@@ -552,7 +551,7 @@ body{
 
     .banner_sucursales{
         flex-flow: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .sucursales_area ul li{
@@ -564,12 +563,8 @@ body{
         display: block;
     }
 
-    .sucursales_img{
-        width: 50%;
-    }
-
-    .img-container img{
-        width: 100%;
+    .sucursales_img img{
+        width: 400px;
     }
 
     /* PAGINA DE BOWLS */
@@ -579,11 +574,11 @@ body{
         justify-items: center;
     }
 
-    .contain .titulo{
+    .contain_titulo{
         grid-column: span 2;
     }
 
-    .contain .bowls:last-of-type{
+    .contain_bowls:last-of-type{
         grid-column: span 2;
         width: 50%;
     }
@@ -617,7 +612,7 @@ body{
 
      /* footer */
 
-     .footer{
+     .banner_footer{
         flex-direction: row;
         justify-content: space-around;
     }
@@ -634,9 +629,6 @@ body{
 
     /* contenido principal */
 
-    .banner{
-    }
-
     .banner .contenido h1{
         font-size: 2.2rem;
     }
@@ -648,55 +640,45 @@ body{
 
     /* caracter y video */
 
-    .banner .video{
+    .banner_video{
         justify-content: space-around;
     }
 
-    .banner .video .Caracter h2{
+    .video_Caracter h2{
         font-size: 2rem;
         text-align: center;
     }
 
-    .banner .video .Caracter ul{
+    .video_Caracter ul{
         font-size: 1.3rem;
         margin-top: 10px;
         padding: 10px;
     }
 
-    .banner .video .Caracter ul li{
+    .video_Caracter ul li{
         margin: 5px;
     }
 
-    .banner .video .container{
+    .video_container{
         width: 35%;
     }
 
-    .banner .video .container video{
+    .video_container video{
         max-width: 430px;
     }
 
     /* sucursales */
 
-    .banner .sucursales{
+    .banner_sucursales{
         justify-content: space-around;
     }
 
-    .banner .sucursales .img-container{
+    .sucursales_img{
         width: 35%;
     }
 
-    .banner .sucursales .img-container img{
+    .sucursales_img img{
         width: 450px;
-        height: auto;
-    }
-
-    .banner .grupo{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .banner .grupo div p{
-        width: 100%;
     }
 
     /* pagina de bowls */
@@ -708,30 +690,32 @@ body{
         justify-content: space-between;
     }
 
-    .contain .titulo{
+    .contain_titulo{
         grid-column: span 3;
     }
 
-    .contain .bowls{
+    .contain_bowls{
         align-self: baseline;
     }
 
-    .contain .bowls:last-of-type{
+    .contain_bowls:last-of-type{
         grid-column: span 1;
         width: 100%;
     }
 
-    .contain .bowls img{
+    .contain_bowls img{
         height: 550px;
     }
 
-    /* formulario */
+    /* Formulario */
 
     .form-container{
         padding: 0 10em;
     }
 
-    .footer{
+    /* Footer */
+
+    .banner_footer{
         padding: 20px;
     }
 
